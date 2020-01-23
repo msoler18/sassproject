@@ -1,3 +1,14 @@
+.perfil__minibio{
+  margin:0 auto;
+  padding-top:20px;
+  h2 {
+    @extend .perfil__nombre;
+  }
+  h3{
+    @extend .perfil__titulo;
+  }
+}
+
 .estadistica--perfil{
   display: flex;
   width: 50%;

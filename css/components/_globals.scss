@@ -11,6 +11,10 @@ $variation-color:#3f579a;
   background-color:$clear-color;
 }
 
+@function get_opacity($color,$nivel){
+  @return rgba($color,$nivel);
+}
+
 *{
   box-sizing: border-box;
 }
