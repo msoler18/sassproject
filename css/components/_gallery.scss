@@ -16,10 +16,9 @@
   }
   h2{
     margin-bottom:10px;
-    text-transform: uppercase;
     font-weight: 600;
     font-size:20px;
-    font-family: $secondary-font;
+    @include titles($secondary-font);
   }
   img{
     border-radius: 10px;

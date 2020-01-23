@@ -11,6 +11,16 @@ $variation-color:#3f579a;
   background-color:$clear-color;
 }
 
+@mixin titles( $font ){
+  @if $font == $main-font{
+    font-family: $main-font;
+  } @else {
+    font-family:$secondary-font;
+    text-transform: uppercase; 
+  }
+}
+
+
 @function get_opacity($color,$nivel){
   @return rgba($color,$nivel);
 }
@@ -30,6 +40,7 @@ $variation-color:#3f579a;
 body{
   margin:0;
   font-family: $main-font;
+  @include titles($main-font);
 }
 
 main{

@@ -21,13 +21,11 @@
     font-weight: 600;
     font-size:20px;
     text-align: center;
-    text-transform: uppercase;
-    font-family: $secondary-font;
+    @include titles($secondary-font);
   }
   span {
     font-size:12px;
     text-align: center;
-    text-transform: uppercase;
-    font-family: $secondary-font;
+    @include titles($secondary-font);
   }
 }
